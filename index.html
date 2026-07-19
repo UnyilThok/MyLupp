@@ -77,7 +77,7 @@
         
         // --- PENGATURAN HARI JADIAN ---
         // Format: TAHUN-BULAN-TANGGAL
-        const startDate = new Date("2024-01-01"); 
+        const startDate = new Date("2026-01-08"); 
         const today = new Date();
         const diff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
         document.getElementById('date-counter').innerText = `❤️ ${diff} Hari Bersama ❤️`;
@@ -153,7 +153,7 @@
         // --- INISIALISASI SAAT HALAMAN DIBUKA ---
         window.onload = () => {
             const h = new Date().getHours();
-            document.getElementById('title').innerText = h < 11 ? "Selamat Pagi ✨" : h < 15 ? "Selamat Siang ☀️" : h < 18 ? "Selamat Sore 🌅" : "Selamat Malam 🌙";
+            document.getElementById('title').innerText = h < 11 ? "Selamat Pagi MyLup ✨" : h < 15 ? "Selamat Siang Bubu ☀️" : h < 18 ? "Selamat Sore Sayang 🌅" : "Selamat Malam Cintaku 🌙";
             
             textEl.style.transition = "opacity 0.3s";
             textEl.innerText = memories[0];
