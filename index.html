@@ -1,520 +1,162 @@
-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        .video-bg {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            object-fit: cover;
-            opacity: 0.75;
-            pointer-events: none;
-            transition: opacity 0.8s ease-in-out;
-        }
-
-        /* Kanvas Partikel */
-        #spatial-canvas {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        /* FITUR BARU: Amplop Surat Interaktif Awal */
-        .envelope-wrapper {
-            position: absolute;
-            z-index: 20;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .envelope {
-            font-size: 5.5rem;
-            filter: drop-shadow(0 0 20px var(--neon-pink));
-            animation: float-envelope 3s infinite ease-in-out;
-            transition: transform 0.3s;
-        }
-
-        .envelope-wrapper:hover .envelope {
-            transform: scale(1.1) rotate(5deg);
-        }
-
-        .envelope-text {
-            color: #ffffff;
-            margin-top: 15px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-            text-shadow: 0 0 8px #fff;
-            animation: pulse-text 1.5s infinite ease-in-out;
-        }
-
-        @keyframes float-envelope {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-
-        @keyframes pulse-text {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-
-        /* Kartu Interaktif Persegi Ultra Transparan V25.0 */
-        .v25-card {
-            background: var(--premium-glass);
-            backdrop-filter: blur(35px);
-            -webkit-backdrop-filter: blur(35px);
-            border: 1.5px solid rgba(255, 255, 255, 0.38);
-            padding: 35px 30px; 
-            border-radius: 25px;
-            text-align: center;
-            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.95), 
-                        0 0 60px rgba(255, 0, 127, 0.3);
-            max-width: 360px; 
-            width: 85%;
-            z-index: 10;
-            color: #ffffff;
-            transform-style: preserve-3d;
-            transition: transform 0.15s ease-out, opacity 0.6s ease, transform-box 0.6s ease;
-            position: relative;
-            opacity: 0;
-            transform: scale(0.8) translateZ(0);
-            pointer-events: none;
-        }
-
-        .v25-card.active {
-            opacity: 1;
-            transform: scale(1) translateZ(0);
-            pointer-events: auto;
-        }
-
-        /* Pemutar Musik dengan Efek Visualizer Pulse Premium */
-        .music-box {
-            background: rgba(255, 255, 255, 0.14);
-            border-radius: 12px;
-            padding: 10px 16px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid rgba(255, 255, 255, 0.28);
-            transform: translateZ(40px);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .music-box.playing {
-            box-shadow: 0 0 20px rgba(0, 243, 255, 0.5), 0 0 10px rgba(255, 0, 127, 0.3);
-            border-color: var(--neon-cyan);
-            animation: pulse-glow-v25 2.5s infinite ease-in-out;
-        }
-
-        @keyframes pulse-glow-v25 {
-            0% { transform: translateZ(40px) scale(1); }
-            50% { transform: translateZ(40px) scale(1.03); background: rgba(255, 255, 255, 0.22); }
-            100% { transform: translateZ(40px) scale(1); }
-        }
-
-        .music-info {
-            text-align: left;
-            font-size: 0.8rem;
-            opacity: 0.95;
-        }
-
-        .music-title {
-            font-weight: 600;
-            color: var(--neon-cyan);
-            text-shadow: 0 0 10px rgba(0, 243, 255, 0.6);
-        }
-
-        .btn-play {
-            background: var(--neon-pink);
-            border: none;
-            width: 36px; height: 36px;
-            border-radius: 50%;
-            color: white;
-            font-size: 0.9rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 12px var(--neon-pink);
-            transition: 0.3s;
-        }
-
-        /* Tema Warna Judul dengan Keterbacaan Ekstra Tinggi */
-        h1 {
-            font-size: 2.2rem;
-            margin-top: 0; margin-bottom: 12px;
-            font-weight: 800;
-            transform: translateZ(70px);
-        }
-
-        .pagi-theme {
-            background: linear-gradient(135deg, #fff59d 0%, #ff9100 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.95)) drop-shadow(0 4px 14px rgba(0,0,0,0.8));
-        }
-
-        .siang-theme {
-            background: linear-gradient(135deg, #00f3ff 0%, #00b0ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.95)) drop-shadow(0 4px 14px rgba(0,0,0,0.8));
-        }
-
-        .sore-theme {
-            background: linear-gradient(135deg, #ffab40 0%, #ff007f 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.95)) drop-shadow(0 4px 14px rgba(0,0,0,0.8));
-        }
-
-        .malam-theme {
-            background: linear-gradient(135deg, #ff8a80 0%, #ff4081 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.95)) drop-shadow(0 4px 14px rgba(0,0,0,0.8));
-        }
-
-        /* Teks Deskripsi Interaktif dengan Lapisan Bayangan Super Tebal */
-        p.interactive-text {
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 25px;
-            color: #ffffff;
-            font-weight: 600;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95), 
-                         0 4px 15px rgba(0, 0, 0, 0.9),
-                         0 0 2px rgba(0, 0, 0, 1);
-            transform: translateZ(50px);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            padding: 8px;
-            border-radius: 8px;
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Portal V40.0</title>
+    <style>
+        :root { --accent: #ff007f; --glass: rgba(255, 255, 255, 0.1); }
+        body { margin: 0; background: #050505; font-family: 'Poppins', sans-serif; color: white; overflow: hidden; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        
+        #bg-video { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; transition: filter 1s ease, opacity 0.8s ease; }
+        
+        .card { 
+            background: var(--glass); backdrop-filter: blur(45px); border: 1.5px solid rgba(255,255,255,0.2);
+            padding: 35px 25px; border-radius: 40px; text-align: center; width: 85%; max-width: 380px;
+            transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); z-index: 10; box-shadow: 0 30px 80px rgba(0,0,0,0.8);
             position: relative;
         }
+        .card.hidden { opacity: 0; transform: translateY(80px) scale(0.85); pointer-events: none; }
+        
+        h1 { font-size: 2rem; margin: 0 0 5px 0; color: #fff; text-shadow: 0 0 20px var(--accent); transition: color 0.5s; }
+        
+        /* Audio Visualizer */
+        .visualizer { display: flex; gap: 4px; justify-content: center; align-items: flex-end; height: 20px; margin-bottom: 15px; opacity: 0; transition: opacity 0.3s; }
+        .visualizer.active { opacity: 1; }
+        .bar { width: 4px; background: var(--accent); border-radius: 2px; animation: bounce 0.5s infinite alternate; }
+        .bar:nth-child(2) { animation-delay: 0.2s; }
+        .bar:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes bounce { from { height: 5px; } to { height: 20px; } }
 
-        p.interactive-text:hover {
-            background: rgba(255, 255, 255, 0.15);
-            text-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
-        }
-
-        .hint-text {
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.65);
-            display: block;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            font-weight: 500;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.95);
-            transform: translateZ(45px);
-        }
-
-        /* Tombol Utama */
-        .btn-v25 {
-            background: linear-gradient(45deg, var(--neon-pink), var(--neon-purple));
-            border: none;
-            padding: 14px 45px;
-            color: white;
-            font-size: 1rem;
-            font-weight: 600;
-            border-radius: 100px;
-            cursor: pointer;
-            box-shadow: 0 0 25px rgba(255, 0, 127, 0.6);
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transform: translateZ(80px);
-        }
-
-        .btn-v25:hover {
-            transform: translateZ(100px) scale(1.05);
-            box-shadow: 0 0 45px var(--neon-pink), 0 0 25px var(--neon-cyan);
-        }
-
-        /* Dinamis Element Cosmic Pop */
-        .pop-element {
-            position: absolute;
-            pointer-events: none;
-            z-index: 100;
-            user-select: none;
-        }
+        /* Carousel Text */
+        .text-box { font-size: 1.1rem; line-height: 1.6; min-height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; cursor: pointer; padding: 10px; border-radius: 15px; transition: background 0.3s; }
+        .text-box:hover { background: rgba(255,255,255,0.05); }
+        .hint { font-size: 0.7rem; opacity: 0.6; margin-top: -15px; margin-bottom: 20px; display: block; }
+        
+        .btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px;}
+        .btn { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); padding: 14px; color: white; border-radius: 20px; cursor: pointer; transition: 0.3s; font-weight: 500; }
+        .btn:hover { background: var(--accent); box-shadow: 0 0 15px var(--accent); transform: translateY(-2px); }
+        
+        .counter-badge { display: inline-block; background: rgba(0,0,0,0.5); border: 1px solid var(--accent); padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 600; box-shadow: 0 0 10px var(--accent); }
     </style>
 </head>
 <body>
 
-    <!-- CONTAINER VIDEO MULTI-PLAYLIST -->
-    <div class="video-container">
-        <video id="bg-video" class="video-bg" autoplay muted playsinline>
-            <source src="1.mp4" type="video/mp4">
-        </video>
-    </div>
+    <video id="bg-video" autoplay muted playsinline loop><source src="1.mp4" type="video/mp4"></video>
 
-    <!-- MUSIK LATAR BELAKANG LOKAL -->
-    <audio id="audio-track" loop>
-        <source src="2.mp3" type="audio/mp3">
-    </audio>
-
-    <canvas id="spatial-canvas"></canvas>
-
-    <!-- INTERFACE 1: AMPLOP SURAT UNTUK DIKLIK PASANGAN -->
-    <div class="envelope-wrapper" id="envelope-box" onclick="openEnvelope(event)">
-        <div class="envelope">✉️</div>
-        <div class="envelope-text">Buka Surat dari Sayang ❤️</div>
-    </div>
-
-    <!-- INTERFACE 2: KARTU UTAMA UCAPAN -->
-    <div class="v25-card" id="card-v25">
-        <div class="music-box" id="music-box">
-            <div class="music-info">
-                <div class="music-title">Our Romantic Song ♪</div>
-                <div id="music-status">Sedang Berhenti</div>
-            </div>
-            <button class="btn-play" onclick="toggleMusic()" id="play-btn">▶</button>
+    <div class="card" id="card">
+        <h1 id="title">Halo Sayang ✨</h1>
+        
+        <div class="visualizer" id="vis">
+            <div class="bar"></div><div class="bar"></div><div class="bar"></div>
         </div>
 
-        <h1 id="title-v25">Selamat Malam ✨</h1>
-        <p class="interactive-text" id="text-v25" onclick="changeLoveMessage(event)">Loading pesan cinta...</p>
-        <span class="hint-text" id="hint-v25">💡 ketuk teks di atas untuk ganti pesan</span>
+        <div class="text-box" id="text" onclick="nextMemory()">Loading...</div>
+        <span class="hint">💡 Ketuk teks untuk membaca pesan lainnya</span>
+
+        <div class="btn-grid">
+            <button class="btn" onclick="triggerEffect()">Hujan Magis ✨</button>
+            <button class="btn" onclick="toggleAudio()">Musik 🎵</button>
+            <button class="btn" onclick="changeTheme()">Ganti Tema 🎨</button>
+            <button class="btn" onclick="showSurprise()">Kejutan 🎁</button>
+        </div>
         
-        <button class="btn-v25" onclick="spatialBurst(event)">Buka Kejutan ❤️</button>
+        <div class="counter-badge" id="date-counter">Menghitung hari...</div>
     </div>
 
+    <button style="position: fixed; bottom: 30px; right: 30px; z-index: 100; background: var(--accent); border-radius: 50%; width: 60px; height: 60px; border: none; color: white; font-size: 1.5rem; cursor: pointer; box-shadow: 0 0 20px var(--accent); transition: 0.3s;" onclick="toggleCard()" id="eye-btn">👁️</button>
+
+    <audio id="audio" loop><source src="2.mp3" type="audio/mp3"></audio>
+
     <script>
-        // 1. Playlist Video Berurutan dengan Transisi Mulus
-        const videoElement = document.getElementById('bg-video');
-        const playlist = ['1.mp4', '3.mp4', '4.mp4'];
-        let currentVideoIndex = 0;
-
-        videoElement.addEventListener('ended', function() {
-            videoElement.style.opacity = 0; 
-            
-            setTimeout(() => {
-                currentVideoIndex = (currentVideoIndex + 1) % playlist.length;
-                videoElement.src = playlist[currentVideoIndex];
-                videoElement.load();
-                
-                videoElement.play().then(() => {
-                    videoElement.style.opacity = 0.75; 
-                }).catch(err => console.log("Gagal memutar video otomatis."));
-            }, 800); 
-        });
-
-        // 2. Database Kata-Kata Bucin & Fitur Score Klik
-        const jam = new Date().getHours();
-        const title = document.getElementById('title-v25');
-        const textElement = document.getElementById('text-v25');
-        const hintElement = document.getElementById('hint-v25');
+        const card = document.getElementById('card'), 
+              vid = document.getElementById('bg-video'), 
+              audio = document.getElementById('audio'), 
+              textEl = document.getElementById('text'),
+              vis = document.getElementById('vis');
         
-        let loveMessages = [];
-        let currentMessageIndex = 0;
-        let tapCount = 0;
+        // --- PENGATURAN HARI JADIAN ---
+        // Format: TAHUN-BULAN-TANGGAL
+        const startDate = new Date("2024-01-01"); 
+        const today = new Date();
+        const diff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
+        document.getElementById('date-counter').innerText = `❤️ ${diff} Hari Bersama ❤️`;
 
-        if (jam >= 5 && jam < 11) {
-            title.innerText = "Selamat Pagi My Lup 🌅";
-            title.className = "pagi-theme";
-            loveMessages = [
-                "Selamat pagi semesta jiwaku. Hari baru sudah dimulai, dan hal pertama yang langsung terlintas di pikiranku adalah senyumanmu. Semangat hari ini ya, cintaku!",
-                "Pagi hari selalu indah, tapi akan jauh lebih indah kalau aku bisa memulainya dengan melihat matamu secara langsung. Have a nice day, sayang!",
-                "Energi terbaikku di pagi hari bukan dari secangkir kopi, melainkan dari mengetahui bahwa aku memilikimu untuk menghadapi hari ini. Love you!"
-            ];
-        } else if (jam >= 11 && jam < 15) {
-            title.innerText = "Selamat Siang Bubu <3 ☀️";
-            title.className = "siang-theme";
-            loveMessages = [
-                "Matahari di luar sana boleh saja bersinar terik, tapi kehangatan hatimu tetap yang paling menenangkan. Jangan lupa istirahat dan makan siang ya, kesayanganku.",
-                "Di tengah padatnya aktivitas siang ini, jangan lupa kalau di sini ada aku yang selalu merindukanmu setiap detik. Jangan telat makan ya!",
-                "Istirahat sejenak yuk sayang. Ingat, kamu sudah berjuang luar biasa hari ini. Jangan terlalu lelah, kesehatanmu itu separuh jiwaku."
-            ];
-        } else if (jam >= 15 && jam < 18) {
-            title.innerText = "Selamat Sore Sayang 🌆";
-            title.className = "sore-theme";
-            loveMessages = [
-                "Senja mulai menyapa bumi, membawa pulang lelahmu hari ini. Terima kasih ya sudah berjuang dengan hebat. Aku selalu bangga dan kagum memilikimu.",
-                "Sore hari selalu mengingatkanku betapa tenangnya dunia saat aku bersamamu. Terima kasih telah menjadi bagian terindah dalam hidupku.",
-                "Menjelang malam, rasa rinduku padamu malah semakin menumpuk. Cepat selesaikan urusanmu hari ini ya, biar kita bisa mengobrol lagi."
-            ];
-        } else {
-            title.innerText = "Selamat Malam Semestaku ✨";
-            title.className = "malam-theme";
-            loveMessages = [
-                "Malam ini begitu indah, tapi keindahan itu tidak ada apa-apanya dibanding hadirmu di hidupku. Istirahatlah dengan nyenyak, peluk jauh dari lubuk hatiku yang terdalam. Mimpi indah ya, cintaku.",
-                "Before you close your eyes, I just want to say thank you for being the sweetest part of my universe. Selamat tidur, sayangku.",
-                "Tidurlah yang nyenyak, sayang. Biarkan lelahmu hilang dan semoga di dalam mimpi kita bisa bertemu lagi untuk saling mendekap erat."
-            ];
-        }
+        // --- DATABASE PESAN (MEMORY CAROUSEL) ---
+        const memories = [
+            "Terima kasih telah hadir di hidupku. Setiap detik bersamamu terasa seperti mimpi yang nyata.",
+            "Senyummu adalah favoritku, dan tawamu adalah melodi terbaik di telingaku.",
+            "Aku mungkin tidak selalu bisa berjanji hari esok akan sempurna, tapi aku berjanji akan selalu ada untukmu.",
+            "You are my today and all of my tomorrows. Aku sayang kamu!"
+        ];
+        let memIdx = 0;
 
-        textElement.innerText = loveMessages[0];
-
-        // FITUR BARU: Trigger Pembukaan Amplop Surat Pertama Kali
-        function openEnvelope(e) {
-            const wrapper = document.getElementById('envelope-box');
-            wrapper.style.opacity = '0';
-            wrapper.style.transform = 'scale(0.5)';
+        function nextMemory() {
+            memIdx = (memIdx + 1) % memories.length;
             
+            // Efek fade out-in saat ganti teks
+            textEl.style.opacity = 0;
             setTimeout(() => {
-                wrapper.style.display = 'none';
-                const cardElement = document.getElementById('card-v25');
-                cardElement.classList.add('active');
-                
-                // Nyalakan musik otomatis secara agresif setelah interaksi
-                if(!isPlaying) { toggleMusic(); }
-            }, 600);
+                textEl.innerText = memories[memIdx];
+                textEl.style.opacity = 1;
+            }, 300);
         }
 
-        // Efek Klik Ganti Pesan + Cosmic Particle Path Melengkung
-        function changeLoveMessage(e) {
-            currentMessageIndex = (currentMessageIndex + 1) % loveMessages.length;
-            tapCount++;
-            
-            if(tapCount === 1) hintElement.innerText = "❤️ Sayang kamu!";
-            else if(tapCount === 3) hintElement.innerText = "💖 Cinta banget sama kamu!";
-            else if(tapCount >= 5) hintElement.innerText = "✨ Kamu semestaku selamanya!";
-
-            const clickX = e.clientX;
-            const clickY = e.clientY;
-            createCosmicHeart(clickX, clickY);
-
-            textElement.style.opacity = 0;
-            setTimeout(() => {
-                textElement.innerText = loveMessages[currentMessageIndex];
-                textElement.style.opacity = 1;
-            }, 200);
+        // --- FUNGSI KONTROL ---
+        function toggleCard() {
+            card.classList.toggle('hidden');
+            vid.style.opacity = card.classList.contains('hidden') ? '1' : '0.4';
         }
 
-        function createCosmicHeart(x, y) {
-            const heart = document.createElement('div');
-            heart.className = 'pop-element';
-            heart.innerText = '❤️';
-            heart.style.left = x + 'px';
-            heart.style.top = y + 'px';
-            heart.style.fontSize = Math.random() * 15 + 18 + 'px';
-            document.body.appendChild(heart);
-
-            const travelDistY = Math.random() * 160 + 120;
-            const deviationX = Math.random() * 100 - 50; 
-            const rotation = Math.random() * 360 - 180;
-
-            const anim = heart.animate([
-                { transform: 'translate(-50%, -50%) scale(0.6) rotate(0deg)', opacity: 1 },
-                { transform: `translate(calc(-50% + ${deviationX}px), calc(-50% - ${travelDistY}px)) scale(1.6) rotate(${rotation}deg)`, opacity: 0 }
-            ], { duration: 1400, easing: 'cubic-bezier(0.25, 1, 0.5, 1)' });
-
-            anim.onfinish = () => heart.remove();
-        }
-
-        const emojis = ['🌸', '✨', '❤️', '💖', '🌹', '🦋', '⭐', '🌷'];
-
-        // 3. Kontrol Audio Romantis & Visualizer Pulse
-        const audio = document.getElementById('audio-track');
-        const playBtn = document.getElementById('play-btn');
-        const musicStatus = document.getElementById('music-status');
-        const musicBox = document.getElementById('music-box');
-        let isPlaying = false;
-
-        function toggleMusic() {
-            if (!isPlaying) {
-                audio.play().catch(err => console.log("Interaksi user diperlukan untuk audio."));
-                playBtn.innerText = "⏸";
-                musicStatus.innerText = "Menemanimu... ♫";
-                musicBox.classList.add('playing');
-                isPlaying = true;
+        function toggleAudio() {
+            if(audio.paused) {
+                audio.play().catch(() => {});
+                vis.classList.add('active');
             } else {
                 audio.pause();
-                playBtn.innerText = "▶";
-                musicStatus.innerText = "Sedang Berhenti";
-                musicBox.classList.remove('playing');
-                isPlaying = false;
+                vis.classList.remove('active');
             }
         }
 
-        // 4. Engine Spasial Efek Partikel Canvas
-        const canvas = document.getElementById('spatial-canvas');
-        const ctx = canvas.getContext('2d');
-        let particleArray = [];
-
-        function initCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+        function changeTheme() {
+            const colors = ['#ff007f', '#00f3ff', '#ffd700', '#9d00ff', '#ff3366'];
+            const newCol = colors[Math.floor(Math.random() * colors.length)];
+            document.documentElement.style.setProperty('--accent', newCol);
+            document.getElementById('eye-btn').style.boxShadow = `0 0 20px ${newCol}`;
         }
-        window.addEventListener('resize', initCanvas);
-        initCanvas();
 
-        class SpatialParticle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height + canvas.height;
-                this.size = Math.random() * 12 + 10;
-                this.speedY = Math.random() * 1.2 + 0.4;
-                this.speedX = Math.random() * 0.8 - 0.4;
-                this.emoji = emojis[Math.floor(Math.random() * emojis.length)];
-                this.alpha = Math.random() * 0.5 + 0.2;
-            }
-            update() {
-                this.y -= this.speedY;
-                this.x += this.speedX;
-                if (this.y < -40) {
-                    this.y = canvas.height + 40;
-                    this.x = Math.random() * canvas.width;
-                }
-            }
-            draw() {
-                ctx.globalAlpha = this.alpha;
-                ctx.font = `${this.size}px Arial`;
-                ctx.fillText(this.emoji, this.x, this.y);
+        function triggerEffect() {
+            const symbols = ['❤️', '✨', '🌸', '💖'];
+            for(let i=0; i<30; i++) {
+                const el = document.createElement('div');
+                el.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+                el.style.position = 'fixed';
+                el.style.left = Math.random() * 100 + '%';
+                el.style.top = '-50px';
+                el.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                el.style.transition = '6s linear';
+                el.style.zIndex = '100';
+                document.body.appendChild(el);
+                
+                setTimeout(() => { 
+                    el.style.top = '110%'; 
+                    el.style.transform = `rotate(${Math.random() * 720}deg)`; 
+                }, 50);
+                setTimeout(() => el.remove(), 6000);
             }
         }
 
-        for (let i = 0; i < 30; i++) { particleArray.push(new SpatialParticle()); }
-
-        function render() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particleArray.forEach(p => { p.update(); p.draw(); });
-            requestAnimationFrame(render);
+        function showSurprise() {
+            alert("Terima kasih sudah menjadi alasan aku bahagia. I Love You! 💌");
         }
-        render();
 
-        // 5. Efek Interaktif Gerakan 3D Card
-        const card = document.getElementById('card-v25');
-        document.addEventListener('mousemove', (e) => {
-            if(!card.classList.contains('active')) return;
-            const xAxis = (window.innerWidth / 2 - e.pageX) / 30;
-            const yAxis = (window.innerHeight / 2 - e.pageY) / 30;
-            card.style.transform = `rotateY(${xAxis}deg) rotateX(${-yAxis}deg)`;
-        });
-        document.addEventListener('mouseleave', () => {
-            card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-        });
-
-        // 6. Efek Ledakan Partikel Cinta (Burst)
-        function spatialBurst(e) {
-            if(!isPlaying) { toggleMusic(); }
-
-            const rect = e.target.getBoundingClientRect();
-            const startX = rect.left + rect.width / 2;
-            const startY = rect.top + rect.height / 2;
-
-            for (let i = 0; i < 65; i++) {
-                const pop = document.createElement('div');
-                pop.className = 'pop-element';
-                pop.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-                pop.style.left = startX + 'px';
-                pop.style.top = startY + 'px';
-                pop.style.fontSize = Math.random() * 20 + 20 + 'px';
-                document.body.appendChild(pop);
-
-                const angle = Math.random() * Math.PI * 2;
-                const distance = Math.random() * 280 + 80;
-                const targetX = Math.cos(angle) * distance;
-                const targetY = Math.sin(angle) * distance;
-
-                const anim = pop.animate([
-                    { transform: 'translate(-50%, -50%) scale(0.1)', opacity: 1 },
-                    { transform: `translate(calc(-50% + ${targetX}px), calc(-50% + ${targetY}px)) scale(1.8) rotate(${Math.random() * 720}deg)`, opacity: 0 }
-                ], { duration: 1500, easing: 'cubic-bezier(0.1, 0.8, 0.2, 1)' });
-
-                anim.onfinish = () => pop.remove();
-            }
+        // --- INISIALISASI SAAT HALAMAN DIBUKA ---
+        window.onload = () => {
+            const h = new Date().getHours();
+            document.getElementById('title').innerText = h < 11 ? "Selamat Pagi ✨" : h < 15 ? "Selamat Siang ☀️" : h < 18 ? "Selamat Sore 🌅" : "Selamat Malam 🌙";
+            
+            textEl.style.transition = "opacity 0.3s";
+            textEl.innerText = memories[0];
         }
     </script>
 </body>
