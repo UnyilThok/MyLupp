@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ff007f">
+    <meta name="description" content="Portal Spesial Untukmu">
+    <title>For My Luv</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="iruu.css">
+</head>
+<body>
+    <div class="unlock-overlay" id="unlock-overlay">
+        <div class="unlock-icon">&#x1F496;</div>
+        <div class="unlock-text">Ketuk untuk Membuka</div>
+        <div class="unlock-hint">Tap anywhere to start</div>
+    </div>
+
+    <div class="corner-flower flower-tl">&#x1F338;</div>
+    <div class="corner-flower flower-tr">&#x1F33A;</div>
+    <div class="corner-flower flower-bl">&#x1F337;</div>
+    <div class="corner-flower flower-br">&#x1F33B;</div>
+
+    <canvas id="hearts-canvas"></canvas>
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="butterfly-canvas"></canvas>
+
+    <video id="bg-video" autoplay muted playsinline loop><source src="1.mp4" type="video/mp4"></video>
+
+    <div class="card" id="card">
+        <div class="card-glow"></div>
+        <div class="live-clock" id="live-clock">--:--:--</div>
+        <div class="live-date-gregorian" id="date-gregorian">Memuat tanggal...</div>
+        <div class="live-date-hijri" id="date-hijri">Memuat kalender Hijriah...</div>
+        <h1 id="title" class="script-font">Halo Sayang &#x2728;</h1>
+        <div class="visualizer" id="vis">
+            <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+        </div>
+        <div class="memory-container">
+            <div class="text-box" id="text">Memuat pesan...</div>
+            <div class="memory-dots" id="dots"></div>
+            <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        </div>
+        <span class="hint">&#x1F4A1; Ketuk, geser, atau tahan untuk pesan lain</span>
+        <div class="btn-grid">
+            <button class="btn" id="btn-particles">Cinta &#x2728;</button>
+            <button class="btn" id="btn-music">Musik &#x1F3B5;</button>
+            <button class="btn" id="btn-theme">Tema &#x1F3A8;</button>
+            <button class="btn" id="btn-gallery">Galeri &#x1F4F8;</button>
+            <button class="btn" id="btn-surprise">Kejutan &#x1F381;</button>
+            <button class="btn" id="btn-wish">Harapan &#x1F48C;</button>
+        </div>
+        <div class="nav-grid">
+            <button class="nav-btn" id="btn-prev">&#x2B05; Sebelumnya</button>
+            <button class="nav-btn" id="btn-next">Berikutnya &#x27A1;</button>
+        </div>
+        <div class="counter-badge" id="date-counter">&#x23F3; Menghitung...</div>
+        <div class="location-selector">
+            <label for="city-select">&#x1F4CD; Lokasi:</label>
+            <select id="city-select"><option value="Malang">Malang</option><option value="Bogor">Bogor</option></select>
+        </div>
+        <div class="prayer-schedule-display" id="prayer-schedule-display">Memuat jadwal sholat...</div>
+        <div class="prayer-reminder" id="prayer-reminder"></div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/_iruu22?igsh=aTBmM2tqbTIzeGN6" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://tiktok.com/@_iruu22" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 2.52-1.12 4.84-2.98 6.39-1.48 1.25-3.42 2.01-5.36 2.01-4.21 0-7.63-3.42-7.63-7.63 0-3.79 2.77-6.95 6.39-7.51v4.07c-1.34.42-2.31 1.67-2.31 3.13 0 1.82 1.48 3.3 3.3 3.3 1.82 0 3.3-1.48 3.3-3.3V.02h1.21z"/></svg></a>
+        </div>
+    </div>
+
+    <button class="eye-btn" id="eye-btn" type="button" aria-label="Toggle Visibility">&#x1F441;&#xFE0F;</button>
+
+    <div class="modal-overlay" id="gallery-modal">
+        <div class="modal-content"><h2 class="script-font">Becu&lt;3 &#x1F4F8;</h2><div class="gallery-grid" id="gallery-grid"></div><button class="btn" id="btn-close-gallery" style="margin-top:10px;width:100%">Tutup &#x2715;</button></div>
+    </div>
+
+    <div class="wish-overlay" id="wish-overlay">
+        <div class="wish-card"><div class="wish-icon">&#x1F48C;</div><div class="wish-text" id="wish-text">...</div><button class="wish-close" id="btn-close-wish">Tutup &#x2728;</button></div>
+    </div>
+
+    <audio id="audio" loop preload="auto"><source src="2.mp3" type="audio/mpeg"></audio>
+
+    <script src="iruu.js"></script>
+</body>
+</html>
